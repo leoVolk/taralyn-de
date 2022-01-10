@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full min-h-screen flex xl:flex-nowrap flex-wrap flex-row relative overflow-y-hidden bg-amber-50"
+    class="w-full min-h-screen flex xl:flex-nowrap flex-wrap relative overflow-y-hidden bg-amber-50"
   >
     <div
       class="xl:w-1/2 xl:h-auto h-screen w-full flex flex-col flex-wrap relative"
@@ -128,7 +128,7 @@ export default {
 
 <style lang="postcss">
 .category {
-  @apply w-full hover:w-[115%] transition-all duration-300 bg-cover xl:h-full h-1/4 cursor-pointer;
+  @apply xl:w-1/4 w-full hover:w-[30%] transition-all duration-300 bg-cover xl:h-full h-1/4 cursor-pointer bg-black;
 }
 
 .category img {
