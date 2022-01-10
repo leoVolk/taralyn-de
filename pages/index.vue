@@ -125,7 +125,7 @@ export default {
 }
 
 .category img {
-  @apply object-cover w-full transition-all duration-300 absolute inset-0 h-full hover:filter hover:grayscale;
+  @apply object-cover w-full transition-all duration-300 absolute inset-0 h-full hover:grayscale;
 }
 
 .category h2 {
