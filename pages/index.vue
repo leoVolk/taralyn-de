@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full min-h-screen flex xl:flex-nowrap flex-wrap flex-row relative overflow-y-hidden"
+    class="w-full min-h-screen flex xl:flex-nowrap flex-wrap flex-row relative overflow-y-hidden bg-amber-50"
   >
     <div
       class="xl:w-1/2 xl:h-auto h-screen w-full flex flex-col flex-wrap relative"
@@ -8,7 +8,7 @@
       <div class="items-center flex h-full">
         <div class="xl:p-8 p-4">
           <h1
-            class="tnr text-8xl xl:text-left text-center font-medium tracking-wide border-b-2 border-black animate__animated animate__slideInUp"
+            class="tnr text-8xl xl:text-[12rem] xl:text-left text-center font-medium tracking-wide border-b-2 border-black animate__animated animate__slideInUp"
           >
             Hi, I'm Taralyn!
           </h1>
@@ -137,9 +137,5 @@ export default {
 
 .category h2 {
   @apply text-6xl font-bold tracking-wider text-white z-10 relative;
-}
-
-.tnr {
-  font-family: 'Times New Roman', Times, serif;
 }
 </style>

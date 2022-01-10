@@ -1,10 +1,11 @@
 <template>
   <div class="relative min-h-screen">
+    <nav-bar></nav-bar>
     <Nuxt></Nuxt>
     <div
       class="absolute w-full h-screen inset-0 pointer-events-none z-20 flex items-center justify-center"
     >
-      <span class="xl:text-9xl text-4xl opacity-10 -rotate-12"
+      <span class="xl:text-9xl text-4xl opacity-5 -rotate-12"
         >WORK IN PROGRESS</span
       >
     </div>
