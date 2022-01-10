@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full min-h-screen flex xl:flex-nowrap flex-wrap flex-row relative"
+    class="w-full min-h-screen flex xl:flex-nowrap flex-wrap flex-row relative overflow-y-hidden"
   >
     <div
       class="xl:w-1/2 xl:h-auto h-screen w-full flex flex-col flex-wrap relative"
@@ -8,12 +8,14 @@
       <div class="items-center flex h-full">
         <div class="xl:p-8 p-4">
           <h1
-            class="tnr text-8xl xl:text-left text-center font-medium tracking-wide border-b-2 border-black"
+            class="tnr text-8xl xl:text-left text-center font-medium tracking-wide border-b-2 border-black animate__animated animate__slideInUp"
           >
             Hi, I'm Taralyn!
           </h1>
 
-          <p class="tracking-wide xl:max-w-screen-lg xl:mt-12 mt-6 xk:text-lg">
+          <p
+            class="tracking-wide xl:max-w-screen-lg xl:mt-12 mt-6 xk:text-lg animate__animated animate__slideInUp"
+          >
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. <br />At vero eos et accusam et justo duo
@@ -25,8 +27,10 @@
             gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
           </p>
 
-          <div class="flex flex-row mt-12 items-center justify-between">
-            <div class="xl:w-auto w-full">
+          <div
+            class="flex flex-row mt-12 items-center justify-between animate__animated animate__slideInUp"
+          >
+            <div class="xl:w-auto w-full animate__animated animate__slideInUp">
               <nuxt-link
                 to=""
                 class="border-4 border-black font-medium text-2xl xl:px-32 py-2 hover:bg-black hover:text-white transition-all duration-300 flex xl:block justify-center"
@@ -56,7 +60,7 @@
       >
         <nuxt-link
           to="/gallery"
-          class="xl:border-r-4 xl:border-l-4 border-black category relative"
+          class="xl:border-r-4 xl:border-l-4 border-black category relative animate__animated animate__slideInUp"
           style=""
         >
           <img
@@ -71,7 +75,7 @@
         </nuxt-link>
         <nuxt-link
           to="/cosplay"
-          class="xl:border-r-4 border-black category relative"
+          class="xl:border-r-4 border-black category relative animate__animated animate__slideInUp animate__delay-025s"
         >
           <img
             class=""
@@ -85,7 +89,7 @@
         </nuxt-link>
         <nuxt-link
           to="/blog"
-          class="xl:border-r-4 border-black category relative"
+          class="xl:border-r-4 border-black category relative animate__animated animate__slideInUp animate__delay-050s"
         >
           <img
             class=""
@@ -97,7 +101,10 @@
             </div>
           </div>
         </nuxt-link>
-        <nuxt-link to="/blog" class="category relative">
+        <nuxt-link
+          to="/blog"
+          class="category relative animate__animated animate__slideInUp animate__delay-075s"
+        >
           <img
             class=""
             src="https://images.unsplash.com/photo-1615615307921-1f456bc82a08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"

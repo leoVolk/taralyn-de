@@ -1,0 +1,20 @@
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.animate__delay-025s {
+  animation-delay: 0.25s;
+}
+
+.animate__delay-050s {
+  animation-delay: 0.5s;
+}
+
+.animate__delay-075s {
+  animation-delay: 0.75s;
+}
