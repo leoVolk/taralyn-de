@@ -8,9 +8,9 @@ body {
 
 /* Add the lines below */
 @layer utilities {
-  @variants responsive {
+  @layer components {
     .masonry {
-      column-gap: 1.5em;
+      column-gap: 1em;
       column-count: 4;
     }
     .break-inside {

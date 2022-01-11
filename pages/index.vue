@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full min-h-screen flex xl:flex-nowrap flex-wrap relative overflow-y-hidden bg-amber-50"
+    class="w-full min-h-screen flex xl:flex-nowrap flex-wrap relative overflow-y-hidden bg-amber-50 dark:bg-gray-900 dark:text-gray-100"
   >
     <div
       class="xl:w-1/2 xl:h-auto h-screen w-full flex flex-col flex-wrap relative"
@@ -8,14 +8,12 @@
       <div class="items-center flex h-full">
         <div class="xl:p-8 p-4">
           <h1
-            class="tnr text-8xl xl:text-[12rem] xl:text-left text-center font-medium tracking-wide border-b-2 border-black"
+            class="tnr text-8xl lg:text-9xl xl:text-[12rem] xl:text-left text-center font-medium tracking-wide"
           >
             Hi, I'm Taralyn!
           </h1>
 
-          <p
-            class="tracking-wide xl:max-w-screen-lg xl:mt-12 mt-6 xk:text-lg animate__animated animate__slideInUp"
-          >
+          <p class="tracking-wide xl:max-w-screen-lg xl:mt-12 mt-6 xk:text-lg">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. <br />At vero eos et accusam et justo duo
@@ -27,13 +25,11 @@
             gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
           </p>
 
-          <div
-            class="flex flex-row mt-12 items-center justify-between animate__animated animate__slideInUp"
-          >
-            <div class="xl:w-auto w-full animate__animated animate__slideInUp">
+          <div class="flex flex-row mt-12 items-center justify-between">
+            <div class="xl:w-auto w-full">
               <nuxt-link
                 to=""
-                class="border-4 border-black font-medium text-2xl xl:px-32 py-2 hover:bg-black hover:text-white transition-all duration-300 flex xl:block justify-center"
+                class="border-4 border-black dark:border-gray-100 font-medium text-2xl xl:px-32 py-2 hover:bg-black dark:hover:bg-gray-100 dark:hover:text-gray-900 hover:text-white transition-all duration-300 flex xl:block justify-center"
                 ><span>About Me</span></nuxt-link
               >
             </div>
@@ -49,7 +45,7 @@
       >
         <nuxt-link
           to="/gallery"
-          class="xl:border-r-4 xl:border-l-4 border-black category relative animate__animated animate__slideInUp"
+          class="xl:border-r-4 xl:border-l-4 border-black dark:border-gray-100 category relative animate__animated animate__slideInUp"
           style=""
         >
           <img
@@ -64,7 +60,7 @@
         </nuxt-link>
         <nuxt-link
           to="/cosplay"
-          class="xl:border-r-4 border-black category relative animate__animated animate__slideInUp animate__delay-025s"
+          class="xl:border-r-4 border-black dark:border-gray-100 category relative animate__animated animate__slideInUp animate__delay-025s"
         >
           <img
             class=""
@@ -78,7 +74,7 @@
         </nuxt-link>
         <nuxt-link
           to="/blog"
-          class="xl:border-r-4 border-black category relative animate__animated animate__slideInUp animate__delay-050s"
+          class="xl:border-r-4 border-black dark:border-gray-100 category relative animate__animated animate__slideInUp animate__delay-050s"
         >
           <img
             class=""
