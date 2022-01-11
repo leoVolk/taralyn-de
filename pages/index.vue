@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full min-h-screen flex xl:flex-nowrap flex-wrap relative overflow-y-hidden bg-amber-50"
+    class="w-full min-h-screen flex xl:flex-nowrap flex-wrap relative overflow-y-hidden bg-amber-100"
   >
     <div
       class="xl:w-1/2 xl:h-auto h-screen w-full flex flex-col flex-wrap relative"
@@ -8,7 +8,7 @@
       <div class="items-center flex h-full">
         <div class="xl:p-8 p-4">
           <h1
-            class="tnr text-8xl xl:text-[12rem] xl:text-left text-center font-medium tracking-wide border-b-2 border-black animate__animated animate__slideInUp"
+            class="tnr text-8xl xl:text-[12rem] xl:text-left text-center font-medium tracking-wide border-b-2 border-black"
           >
             Hi, I'm Taralyn!
           </h1>
@@ -41,18 +41,7 @@
         </div>
       </div>
 
-      <div
-        class="absolute top-0 right-0 mr-2 mt-2 border-t-4 border-r-4 border-black w-8 h-8"
-      ></div>
-      <div
-        class="absolute top-0 left-0 ml-2 mt-2 border-t-4 border-l-4 border-black w-8 h-8"
-      ></div>
-      <div
-        class="absolute bottom-0 right-0 mr-2 mb-2 border-b-4 border-r-4 border-black w-8 h-8"
-      ></div>
-      <div
-        class="absolute bottom-0 left-0 ml-2 mb-2 border-b-4 border-l-4 border-black w-8 h-8"
-      ></div>
+      <corner-borders></corner-borders>
     </div>
     <div class="xl:w-1/2 w-full">
       <div
@@ -121,7 +110,9 @@
 </template>
 
 <script>
+import CornerBorders from '~/components/CornerBorders.vue'
 export default {
+  components: { CornerBorders },
   name: 'IndexPage',
 }
 </script>
