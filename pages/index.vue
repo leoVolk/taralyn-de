@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full min-h-screen flex xl:flex-nowrap flex-wrap relative overflow-y-hidden bg-amber-100"
+    class="w-full min-h-screen flex xl:flex-nowrap flex-wrap relative overflow-y-hidden bg-amber-50"
   >
     <div
       class="xl:w-1/2 xl:h-auto h-screen w-full flex flex-col flex-wrap relative"

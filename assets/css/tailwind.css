@@ -5,3 +5,16 @@
 body {
   @apply bg-black p-0 m-0;
 }
+
+/* Add the lines below */
+@layer utilities {
+  @variants responsive {
+    .masonry {
+      column-gap: 1.5em;
+      column-count: 4;
+    }
+    .break-inside {
+      break-inside: avoid;
+    }
+  }
+}
