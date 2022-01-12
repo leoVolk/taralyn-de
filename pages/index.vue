@@ -8,7 +8,7 @@
       <div class="items-center flex h-full">
         <div class="xl:p-8 p-4">
           <h1
-            class="tnr text-6xl md:text-9xl xl:text-[12rem] xl:text-left text-center font-medium tracking-wide"
+            class="tnr 2xl:text-[12rem] text-6xl md:text-9xl xl:text-[10rem] xl:text-left text-center font-medium tracking-wide"
           >
             Hi, I'm Taralyn!
           </h1>
@@ -113,11 +113,11 @@ export default {
 
 <style lang="postcss">
 .category {
-  @apply xl:w-1/4 w-full hover:w-[30%] transition-all duration-300 bg-cover xl:h-full h-1/4 cursor-pointer bg-black;
+  @apply xl:w-1/4 w-full lg:hover:w-[30%] transition-all duration-300 bg-cover xl:h-full h-1/4 cursor-pointer bg-black;
 }
 
 .category img {
-  @apply object-cover w-full transition-all duration-300 absolute inset-0 h-full hover:grayscale;
+  @apply object-cover w-full transition-all duration-300 absolute inset-0 h-full filter hover:grayscale;
 }
 
 .category h2 {
