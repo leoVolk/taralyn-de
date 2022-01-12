@@ -3,12 +3,12 @@
     class="w-full min-h-screen flex xl:flex-nowrap flex-wrap relative overflow-y-hidden bg-amber-50 dark:bg-gray-900 dark:text-gray-100"
   >
     <div
-      class="xl:w-1/2 xl:h-auto h-screen w-full flex flex-col flex-wrap relative"
+      class="xl:w-1/2 xl:h-auto min-h-screen w-full flex flex-col flex-wrap relative"
     >
       <div class="items-center flex h-full">
         <div class="xl:p-8 p-4">
           <h1
-            class="tnr text-8xl lg:text-9xl xl:text-[12rem] xl:text-left text-center font-medium tracking-wide"
+            class="tnr text-6xl md:text-9xl xl:text-[12rem] xl:text-left text-center font-medium tracking-wide"
           >
             Hi, I'm Taralyn!
           </h1>
@@ -20,9 +20,7 @@
             dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
             sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
             consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-            eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            ut labore et dolore magna aliquyam erat, sed diam voluptua.
           </p>
 
           <div class="flex flex-row mt-12 items-center justify-between">
