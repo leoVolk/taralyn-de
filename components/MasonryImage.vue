@@ -1,11 +1,15 @@
 <template>
-  <div class="relative">
+  <div class="relative group">
     <img
       @click="open = !open"
       loading="lazy"
       class="object-cover w-full h-full rounded-md shadow-lg"
       :src="img"
     />
+
+    <div class="group-hover:block hidden transition-opacity fade-in">
+      <corner-borders></corner-borders>
+    </div>
 
     <div
       @click="open = false"
@@ -26,8 +30,10 @@
 </template>
 
 <script>
+import CornerBorders from './CornerBorders.vue'
 export default {
   props: ['img'],
+  components: [CornerBorders],
   data() {
     return {
       open: false,
