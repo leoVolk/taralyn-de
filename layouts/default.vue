@@ -1,10 +1,10 @@
 <template>
   <div class="relative min-h-screen">
-    <div class="fixed -top-4 -left-14 z-40">
-      <div class="switch">
+    <div class="fixed -bottom-4 -left-14 z-40">
+      <div class="switch !cursor-none">
         <input
           v-model="isLight"
-          class="scale-[25%]"
+          class="scale-[25%] cursor-none"
           @change="toggleTheme()"
           type="checkbox"
           name="toggle"
@@ -29,6 +29,7 @@
     </div>
 
     <Nuxt></Nuxt>
+    <cursor-fx />
   </div>
 </template>
 <script>

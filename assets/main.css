@@ -1,5 +1,12 @@
 @import './toggle.css';
 
+* {
+  transition-property: background-color, border-color, text-decoration-color,
+    fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
 html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -40,4 +47,9 @@ html {
   100% {
     opacity: 1;
   }
+}
+
+button,
+input {
+  cursor: default;
 }

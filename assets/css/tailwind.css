@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-black p-0 m-0;
+  @apply bg-black p-0 m-0 overflow-x-hidden;
 }
 
 /* Add the lines below */
@@ -17,4 +17,12 @@ body {
       break-inside: avoid;
     }
   }
+}
+
+.dark .cursor-fx__inner__outside,
+.dark .cursor-fx__inner__inside {
+  @apply !text-gray-50 shadow-white drop-shadow-sm;
+}
+body ::v-deep .vue-cursor-fx {
+  position: fixed;
 }

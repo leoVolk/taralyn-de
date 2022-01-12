@@ -1,5 +1,10 @@
 <template>
   <div class="">
+    <nuxt-link
+      to="/"
+      class="fixed top-4 left-4 tnr dark:text-white text-4xl font-bold text-gray-900 z-20"
+      >&#8610;</nuxt-link
+    >
     <div class="h-screen relative w-full fade-in">
       <img
         class="fixed top-0 h-full w-full inset-0 object-cover fade-in saturate-150"
@@ -17,18 +22,14 @@
     </div>
 
     <div class="relative bg-amber-50 dark:bg-gray-900 overflow-hidden">
-      <div class="container mx-auto my-8">
+      <div class="container mx-auto my-8 px-4">
         <div class="box-border h-full mx-auto md:masonry break-inside">
           <div
             v-for="(img, i) in images"
             :key="i"
             class="masonry-item break-inside"
           >
-            <img
-              loading="lazy"
-              class="object-cover w-full h-full rounded-md shadow-lg"
-              :src="img"
-            />
+            <masonry-image :img="img"></masonry-image>
           </div>
         </div>
       </div>
@@ -38,8 +39,9 @@
 
 <script>
 import CornerBorders from '~/components/CornerBorders.vue'
+import MasonryImage from '~/components/MasonryImage.vue'
 export default {
-  components: { CornerBorders },
+  components: { CornerBorders, MasonryImage },
   data() {
     return {
       images: [
