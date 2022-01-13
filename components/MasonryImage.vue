@@ -17,9 +17,9 @@
       <div
         class="flex items-center xl:max-w-screen-sm w-full h-full justify-center"
       >
-        <div class="p-4 fade-in">
+        <div class="p-4 fade-in lg:h-auto h-full">
           <div
-            class="px-4 overflow-auto relative dark:bg-gray-900 bg-amber-50 text-gray-900 dark:text-gray-100 rounded-md"
+            class="px-4 overflow-auto relative h-full lg:h-auto dark:bg-gray-900 bg-amber-50 text-gray-900 dark:text-gray-100 rounded-md"
           >
             <h3
               class="text-2xl py-4 font-medium dark:bg-gray-900 bg-amber-50 sticky top-0 transition-all duration-300"
