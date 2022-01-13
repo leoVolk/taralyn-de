@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div :class="[open ? ' !h-screen' : '!h-auto ']" class="">
     <nuxt-link
       to="/"
       class="fixed top-4 left-4 tnr dark:text-white text-4xl font-bold text-gray-900 z-20"
@@ -28,8 +28,10 @@
             v-for="(img, i) in images"
             :key="i"
             class="masonry-item break-inside"
+            @click="open = !open"
           >
-            <masonry-image :img="img"></masonry-image>
+            <masonry-image v-on:details-open="handleDetailsState" :img="img">
+            </masonry-image>
           </div>
         </div>
       </div>
@@ -52,7 +54,13 @@ export default {
         'https://images.unsplash.com/flagged/photo-1569517282304-d1e2baf737e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
         'https://images.unsplash.com/photo-1605496240272-176f7d1d6158?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
       ],
+      open: false,
     }
+  },
+  methods: {
+    handleDetailsState(state) {
+      this.open = state
+    },
   },
 }
 </script>
