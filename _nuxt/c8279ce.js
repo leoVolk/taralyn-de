@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{283:function(t,e,l){"use strict";l.r(e);var n={name:"NavBar"},c=l(50),component=Object(c.a)(n,(function(){var t=this.$createElement;return(this._self._c||t)("nav",{staticClass:"fixed w-full text-xl font-extrabold italic top-4 pl-6 z-30"})}),[],!1,null,null,null);e.default=component.exports}}]);
