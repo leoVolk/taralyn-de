@@ -12,18 +12,40 @@
     <div
       @click="toggleDetail()"
       v-if="open"
-      class="fixed top-0 inset-0 bg-black bg-opacity-90 backdrop-blur-sm z-50"
+      class="fixed top-0 items-center inset-0 flex justify-center bg-black bg-opacity-90 backdrop-blur-sm z-50 py-8"
     >
-      <div class="flex items-center h-full justify-center">
-        <div class="p-4 h-full">
+      <div
+        class="flex items-center xl:max-w-screen-sm w-full h-full justify-center"
+      >
+        <div class="p-4 fade-in">
           <div
-            class="flex lg:flex-nowrap lg:items-center h-full flex-wrap text-gray-100 overflow-auto"
+            class="px-4 overflow-auto relative dark:bg-gray-900 bg-amber-50 text-gray-900 dark:text-gray-100 rounded-md"
           >
+            <h3
+              class="text-2xl py-4 font-medium dark:bg-gray-900 bg-amber-50 sticky top-0 transition-all duration-300"
+            >
+              Image Caption
+            </h3>
             <img
-              class="lg:object-cover object-contain fade-in lg:h-[75vh] rounded-md shadow-lg"
+              class="object-contain rounded-md shadow-lg"
               :src="img"
               alt=""
             />
+
+            <div>
+              <p class="my-4">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                sed diam voluptua. At vero eos et accusam et justo duo dolores
+                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                est Lorem ipsum dolor sit amet.
+              </p>
+            </div>
           </div>
         </div>
       </div>

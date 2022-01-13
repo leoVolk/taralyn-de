@@ -1,5 +1,5 @@
 <template>
-  <div :class="[open ? ' !h-screen' : '!h-auto ']" class="">
+  <div class="">
     <nuxt-link
       to="/"
       class="fixed top-4 left-4 tnr dark:text-white text-4xl font-bold text-gray-900 z-20"
@@ -8,7 +8,7 @@
     <div class="h-screen relative w-full fade-in">
       <img
         class="fixed top-0 h-full w-full inset-0 object-cover fade-in saturate-150"
-        src="https://images.unsplash.com/photo-1484589065579-248aad0d8b13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q="
+        src="https://images.unsplash.com/photo-1484589065579-248aad0d8b13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&w=1920"
         alt=""
       />
 
