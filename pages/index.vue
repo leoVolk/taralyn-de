@@ -71,8 +71,8 @@
           </div>
         </nuxt-link>
         <nuxt-link
-          to="/blog"
-          class="xl:border-r-4 border-black dark:border-gray-100 category relative animate__animated animate__slideInUp animate__delay-050s"
+          to="/"
+          class="xl:border-r-4 cursor-not-allowed border-black dark:border-gray-100 category relative animate__animated animate__slideInUp animate__delay-050s"
         >
           <img
             class=""
@@ -85,8 +85,8 @@
           </div>
         </nuxt-link>
         <nuxt-link
-          to="/blog"
-          class="category relative animate__animated animate__slideInUp animate__delay-075s"
+          to="/"
+          class="category cursor-not-allowed relative animate__animated animate__slideInUp animate__delay-075s"
         >
           <img
             class=""
